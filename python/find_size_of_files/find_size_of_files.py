@@ -1,6 +1,7 @@
 import os
 import re
 
+# Нужно написать скрипт, который выводит сумму размеров всех файлов в гигабайтах, которые начинаются с Logs или logs и имеют расширение .ibd в текущей директории. Результат округлить до целого числа
 def find_required_file_paths(absolute_directory_path):
     regex = re.compile(r"^(Logs)|(logs).+\.ibd$")
     tree = os.walk(absolute_directory_path)
